@@ -1,4 +1,4 @@
-# vuejs-magnifier
+# vuejs-dynamic-tree
 A dynamic tree in vuejs
 
 ## Demo
