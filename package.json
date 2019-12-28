@@ -1,14 +1,33 @@
 {
   "name": "dynamictree",
   "version": "0.1.0",
-  "private": true,
+  "description": "Create dynamic tree in vuejs",
+  "author": {
+    "name": "Ali Sharafi",
+    "email": "a.sharafi1993@gmail.com"
+  },
+  "repository": "https://github.com/ali-sharafi/dynamictree",
+  "keywords": [
+    "dynamictree",
+    "treevuejs",
+    "liqourtree"
+  ],
+  "license": "MIT",
+  "private": false,
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "build:npm": "vue-cli-service build --target lib --name dynamicTree src/components/DynamicTree.vue"
   },
+  "main": "dist/dynamicTree.umd.js",
+  "unpkg": "dist/dynamicTree.umd.min.js",
   "dependencies": {
+    "collect.js": "^4.19.0",
     "core-js": "^3.4.4",
+    "liquor-tree": "^0.2.70",
     "vue": "^2.6.10"
   },
   "devDependencies": {
